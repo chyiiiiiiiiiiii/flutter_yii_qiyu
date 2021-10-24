@@ -1,0 +1,41 @@
+PODS:
+  - Flutter (1.0.0)
+  - NIMSDK_LITE (7.6.2)
+  - ObjectMapper (3.5.3)
+  - qiyu (0.0.1):
+    - Flutter
+    - ObjectMapper (~> 3.5)
+    - QY_iOS_SDK (~> 5.15.0)
+    - SwiftyJSON (~> 4.0)
+  - QY_iOS_SDK (5.15.1):
+    - NIMSDK_LITE (~> 7.6.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - qiyu (from `.symlinks/plugins/qiyu/ios`)
+
+SPEC REPOS:
+  trunk:
+    - NIMSDK_LITE
+    - ObjectMapper
+    - QY_iOS_SDK
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  qiyu:
+    :path: ".symlinks/plugins/qiyu/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  NIMSDK_LITE: a66a5642b1cbf3b046c4198816e618b335e566a7
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  qiyu: 5a68c1485543e1a5e714e7f45cbf385e8e2b23c2
+  QY_iOS_SDK: dad634ba091093b1bbb967482a5e40358d00a5a0
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.2
