@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
@@ -28,6 +29,10 @@ class Qiyu {
   }
 
   static Future<void> setApnsToken({required String apnsToken}) async {
+    if (Platform.isAndroid) {
+      debugPrint('$tag - setApnsToken - Android does not need apnsToken');
+      return;
+    }
     if (apnsToken.isEmpty) {
       debugPrint('$tag - setApnsToken - apnsToken can not be empty');
       return;
