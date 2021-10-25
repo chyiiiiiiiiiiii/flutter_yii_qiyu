@@ -1,6 +1,12 @@
 part 'qiyu_user_info_data.g.dart';
 
 class QiyuUserInfoData {
+
+  // 這三個是固定的基本資料，Key不能改變
+  static const keyName = 'real_name';
+  static const keyPhone = 'mobile_phone';
+  static const keyEmail = 'email';
+
   // 用於排序，顯示數據時數據項按index值升序排列；不設定index的數據項將排在後面；index相同或未設定的數據項將按照其在JSON 中出現的順序排列。
   int? index;
   // 數據項的名稱，用於區別不同的數據
