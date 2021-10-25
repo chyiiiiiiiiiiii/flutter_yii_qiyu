@@ -27,6 +27,17 @@ class Qiyu {
     await _channel.invokeMethod('initialize', arguments);
   }
 
+  static Future<void> setApnsToken({required String apnsToken}) async {
+    if (apnsToken.isEmpty) {
+      debugPrint('$tag - setApnsToken - apnsToken can not be empty');
+      return;
+    }
+    Map arguments = {
+      'apnsToken': apnsToken,
+    };
+    await _channel.invokeMethod('setApnsToken', arguments);
+  }
+
   static Future<void> setUserInfo({
     required String userId,
     required List<QiyuUserInfoData> userInfoDataList,
@@ -40,9 +51,12 @@ class Qiyu {
       return;
     }
     // Use json.encode() to get original json-string
-    String jsonString = userInfoDataList.map((e) {
-      return json.encode(e.toJson());
-    }).toList().toString();
+    String jsonString = userInfoDataList
+        .map((e) {
+          return json.encode(e.toJson());
+        })
+        .toList()
+        .toString();
     await _channel.invokeMethod('setUserInfo', {
       'userId': userId,
       'userInfoDataList': jsonString,

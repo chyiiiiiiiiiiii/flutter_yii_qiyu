@@ -32,6 +32,12 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
         QYSDK.shared().conversationManager().setDelegate(self)
     }
     
+    func setApnsToken() {
+        let apnsToken: String = (arguments?["apnsToken"] ?? "") as! String
+        QYSDK.shared().updateApnsToken(Data(base64Encoded: apnsToken))
+        print("Qiyu - iOS - Apns Token - \(apnsToken)")
+    }
+    
     func setUserInfo() {
         print("Qiyu - iOS - setUserInfo()")
         let userId: String = (arguments?["userId"] ?? "") as! String
@@ -58,10 +64,6 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
         if let rootViewController = UIApplication.shared.delegate?.window??.rootViewController {
             rootViewController.present(sessionViewController, animated: true, completion: nil)
         }
-    }
-    
-    @objc func onBackClick() {
-        
     }
     
     func logout() {
