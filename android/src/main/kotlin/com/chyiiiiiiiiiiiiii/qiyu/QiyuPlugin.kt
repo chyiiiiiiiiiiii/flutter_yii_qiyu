@@ -2,10 +2,8 @@ package com.chyiiiiiiiiiiiiii.qiyu
 
 import android.app.Activity
 import android.content.Context
-import android.util.Log
 import androidx.annotation.NonNull
 import com.chyiiiiiiiiiiiiii.qiyu.util.QiyuManager
-import com.qiyukf.unicorn.api.YSFOptions
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware

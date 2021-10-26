@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
       deviceIdentifier = androidDevice.androidId;
     }
     // 初始化
-    await Qiyu.initialize(appKey: 'd433ac25ced4170d98a66b3eda15edk1', appName: 'qiyu-plugin-example', deviceIdentifier: deviceIdentifier);
+    await Qiyu.initialize(appKey: 'd433ac25ced4170d98a66b3eda15e1a2', appName: 'qiyu-plugin-example', deviceIdentifier: deviceIdentifier);
     // 設置用戶資訊
     List<QiyuUserInfoData> list = [];
     list.add(QiyuUserInfoData(key: 'real_name', value: 'Yii(Test)', label: '名字'));
