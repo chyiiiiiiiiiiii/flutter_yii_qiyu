@@ -3,7 +3,6 @@ package com.chyiiiiiiiiiiiiii.qiyu
 import android.app.Activity
 import android.content.Context
 import androidx.annotation.NonNull
-import com.chyiiiiiiiiiiiiii.qiyu.util.QiyuManager
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
@@ -36,6 +35,10 @@ class QiyuPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 //        val appName = call.argument<String>("appName")
         val deviceIdentifier = call.argument<String>("deviceIdentifier")
         qiyuManager.initQiyu(appKey, deviceIdentifier)
+      }
+      "setDeviceIdentifier" -> {
+        val deviceIdentifier = call.argument<String>("deviceIdentifier")
+        qiyuManager.setDeviceIdentifier(deviceIdentifier)
       }
       "setUserInfo" -> {
         val userId = call.argument<String>("userId") ?: ""

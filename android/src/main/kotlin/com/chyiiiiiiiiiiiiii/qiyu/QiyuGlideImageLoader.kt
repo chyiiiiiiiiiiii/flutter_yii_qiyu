@@ -1,4 +1,4 @@
-package com.chyiiiiiiiiiiiiii.qiyu.util
+package com.chyiiiiiiiiiiiiii.qiyu
 
 import android.content.Context
 import android.graphics.Bitmap

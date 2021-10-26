@@ -1,4 +1,4 @@
-package com.chyiiiiiiiiiiiiii.qiyu.util
+package com.chyiiiiiiiiiiiiii.qiyu
 
 import android.content.Context
 import android.util.Log
@@ -30,7 +30,7 @@ class QiyuManager(private val context: Context) {
     // 取得基本配置
     private fun getMyOptions(deviceIdentifier: String?): YSFOptions {
         val options = YSFOptions()
-        if (deviceIdentifier!= null) {
+        if (deviceIdentifier != null) {
             deviceId = deviceIdentifier
             // 設置省電資訊
             val savePowerConfig = SavePowerConfig()
