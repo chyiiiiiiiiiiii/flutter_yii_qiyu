@@ -27,7 +27,7 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
         let qyOption: QYSDKOption = QYSDKOption(appKey: appKey)
         qyOption.appName = appName
         QYSDK.shared().register(with: qyOption)
-        print("Qiyu - iOS - initialize - AppKey(\(appKey)), AppName(\(appName)")
+        print("Qiyu - iOS - initialize - AppKey(\(appKey)), AppName(\(appName))")
         // 對話
         QYSDK.shared().conversationManager().setDelegate(self)
     }
