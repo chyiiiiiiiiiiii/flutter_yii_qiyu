@@ -32,6 +32,15 @@ class Qiyu {
     await _channel.invokeMethod('initialize', arguments);
   }
 
+  static Future<void> setDeviceIdentifier({
+    required String deviceIdentifier,
+  }) async {
+    Map arguments = {
+      'deviceIdentifier': deviceIdentifier,
+    };
+    await _channel.invokeMethod('setDeviceIdentifier', arguments);
+  }
+
   // 設置用戶資訊
   // 1. 用戶ID
   // 2. 用戶的資料清單，每一項資料為一個物件
