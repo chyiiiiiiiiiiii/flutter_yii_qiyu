@@ -1,4 +1,4 @@
-package com.chyiiiiiiiiiiiiii.qiyu_example
+package com.chyiiiiiiiiiiiiii.qiyu_example_android
 
 import io.flutter.embedding.android.FlutterActivity
 

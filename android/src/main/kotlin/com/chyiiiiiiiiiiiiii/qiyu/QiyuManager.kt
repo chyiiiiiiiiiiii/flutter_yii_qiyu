@@ -34,7 +34,7 @@ class QiyuManager(private val context: Context) {
             deviceId = deviceIdentifier
             // 設置省電資訊
             val savePowerConfig = SavePowerConfig()
-            savePowerConfig.customPush = true
+            savePowerConfig.customPush = false
             savePowerConfig.deviceIdentifier = deviceIdentifier
             options.savePowerConfig = savePowerConfig
             // 取得漫遊訊息，合併同個用戶在不同裝置的聊天紀錄
@@ -86,6 +86,7 @@ class QiyuManager(private val context: Context) {
     fun setDeviceIdentifier(deviceIdentifier: String?) {
         val options = getMyOptions(deviceIdentifier)
         Unicorn.updateOptions(options)
+        Log.d(tag, "Android - deviceIdentifier - ${deviceIdentifier}")
     }
 
     /**

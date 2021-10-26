@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chyiiiiiiiiiiiiii.qiyu_example">
+    package="com.chyiiiiiiiiiiiiii.qiyu_example_android">
    <application
         android:label="qiyu_example"
         android:icon="@mipmap/ic_launcher">
