@@ -1,4 +1,6 @@
 PODS:
+  - device_info (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - NIMSDK_LITE (7.6.2)
   - ObjectMapper (3.5.3)
@@ -12,6 +14,7 @@ PODS:
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - device_info (from `.symlinks/plugins/device_info/ios`)
   - Flutter (from `Flutter`)
   - qiyu (from `.symlinks/plugins/qiyu/ios`)
 
@@ -23,12 +26,15 @@ SPEC REPOS:
     - SwiftyJSON
 
 EXTERNAL SOURCES:
+  device_info:
+    :path: ".symlinks/plugins/device_info/ios"
   Flutter:
     :path: Flutter
   qiyu:
     :path: ".symlinks/plugins/qiyu/ios"
 
 SPEC CHECKSUMS:
+  device_info: d7d233b645a32c40dfdc212de5cf646ca482f175
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
   NIMSDK_LITE: a66a5642b1cbf3b046c4198816e618b335e566a7
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37

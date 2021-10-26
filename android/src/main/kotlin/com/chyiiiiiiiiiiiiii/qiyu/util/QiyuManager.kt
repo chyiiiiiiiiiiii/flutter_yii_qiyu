@@ -9,21 +9,25 @@ import java.util.*
 class QiyuManager(private val context: Context) {
     
     companion object{
-        val tag = "Qiyu"
+        const val tag = "Qiyu"
     }
 
     var deviceId : String = ""
 
     // 七魚客服 - 初始化
+    // 1. 七魚後台的App Key
+    // 2. 添加APP之後顯示的App Name
+    // 3. Android推播，給開發者進行伺服器推播使用，DB可能需要紀錄每個用戶的裝置ID，對應的是推播Token，經由Token送出推播
     fun initQiyu(qiyuAppKey: String? = "", deviceIdentifier: String?, needLocalNotification: Boolean = false) {
         val options = getMyOptions(deviceIdentifier)
         if (needLocalNotification) {
             options.statusBarNotificationConfig = getMyStatusBarNotificationConfig()
         }
         Unicorn.init(context, qiyuAppKey, options, QiyuGlideImageLoader(context))
-        Log.d(tag, "Android - initialize")
+        Log.d(tag, "Android - initialize - AppKey($qiyuAppKey), deviceIdentifier($deviceIdentifier)")
     }
 
+    // 取得基本配置
     private fun getMyOptions(deviceIdentifier: String?): YSFOptions {
         val options = YSFOptions()
         if (deviceIdentifier!= null) {
@@ -71,7 +75,7 @@ class QiyuManager(private val context: Context) {
          * @param title   聊天窗口的標題
          * @param source  諮詢的發起來源，包括發起諮詢的url，title，描述信息等
          */
-        val title = "七魚客服"
+        val title = "Help"
         Unicorn.openServiceActivity(context, title, source)
         Log.d(tag, "Android - showServiceActivity()")
     }
@@ -91,9 +95,9 @@ class QiyuManager(private val context: Context) {
         Log.d(tag, "Android - setUserInfo() - userId - $userId")
         Log.d(tag, "Android - setUserInfo() - dataList - $userInfoDataList")
         val userInfo = YSFUserInfo()
-        // App 的用戶 ID
+        // 用戶ID
         userInfo.userId = userId
-        // CRM 擴展字段
+        // 用戶資訊
         userInfo.data = userInfoDataList
         if (Unicorn.setUserInfo(userInfo)) {
             Log.d(tag, "Android - setUserInfo() - success")

@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:device_info/device_info.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:qiyu/model/qiyu_user_info_data.dart';
@@ -24,8 +27,19 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> runQiyu() async {
-    await Qiyu.initialize(
-        appKey: 'xxxxxxxxxxxxxx', appName: 'xxxxxxxxxxxx', deviceIdentifier: '');
+    // 取得設備ID
+    String deviceIdentifier = '';
+    final DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+    if (Platform.isIOS) {
+      final IosDeviceInfo iosDevice = await deviceInfo.iosInfo;
+      deviceIdentifier = iosDevice.identifierForVendor;
+    } else if (Platform.isAndroid) {
+      final AndroidDeviceInfo androidDevice = await deviceInfo.androidInfo;
+      deviceIdentifier = androidDevice.androidId;
+    }
+    // 初始化
+    await Qiyu.initialize(appKey: 'd433ac25ced4170d98a66b3eda15edk1', appName: 'qiyu-plugin-example', deviceIdentifier: deviceIdentifier);
+    // 設置用戶資訊
     List<QiyuUserInfoData> list = [];
     list.add(QiyuUserInfoData(key: 'real_name', value: 'Yii(Test)', label: '名字'));
     list.add(QiyuUserInfoData(key: 'mobile_phone', value: '0939552333', label: '電話'));

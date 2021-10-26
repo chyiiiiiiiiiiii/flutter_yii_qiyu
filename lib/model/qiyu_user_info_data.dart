@@ -1,5 +1,6 @@
 part 'qiyu_user_info_data.g.dart';
 
+// 用戶的每一項資料為一個物件
 class QiyuUserInfoData {
 
   // 這三個是固定的基本資料，Key不能改變

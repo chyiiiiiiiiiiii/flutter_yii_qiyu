@@ -18,9 +18,6 @@ public class SwiftQiyuPlugin: NSObject, FlutterPlugin {
         case "initialize":
             qiyuManager.initQiYu()
             break;
-        case "setApnsToken":
-            qiyuManager.setApnsToken()
-            break;
         case "setUserInfo":
             qiyuManager.setUserInfo()
             break;

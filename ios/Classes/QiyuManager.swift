@@ -27,15 +27,9 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
         let qyOption: QYSDKOption = QYSDKOption(appKey: appKey)
         qyOption.appName = appName
         QYSDK.shared().register(with: qyOption)
-        print("Qiyu - iOS - initialize")
+        print("Qiyu - iOS - initialize - AppKey(\(appKey)), AppName(\(appName)")
         // 對話
         QYSDK.shared().conversationManager().setDelegate(self)
-    }
-    
-    func setApnsToken() {
-        let apnsToken: String = (arguments?["apnsToken"] ?? "") as! String
-        QYSDK.shared().updateApnsToken(Data(base64Encoded: apnsToken))
-        print("Qiyu - iOS - Apns Token - \(apnsToken)")
     }
     
     func setUserInfo() {
