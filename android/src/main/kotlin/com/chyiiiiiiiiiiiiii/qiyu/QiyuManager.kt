@@ -2,11 +2,14 @@ package com.chyiiiiiiiiiiiiii.qiyu
 
 import android.content.Context
 import android.util.Log
+import androidx.annotation.NonNull
 import com.qiyukf.unicorn.api.*
 import com.qiyukf.unicorn.api.msg.UnicornMessage
+import io.flutter.plugin.common.MethodCall
+import io.flutter.plugin.common.MethodChannel
 import java.util.*
 
-class QiyuManager(private val context: Context) {
+class QiyuManager(private val call: MethodCall, private val result: MethodChannel.Result, private val context: Context) {
     
     companion object{
         const val tag = "Qiyu"
@@ -23,7 +26,8 @@ class QiyuManager(private val context: Context) {
         if (needLocalNotification) {
             options.statusBarNotificationConfig = getMyStatusBarNotificationConfig()
         }
-        Unicorn.init(context, qiyuAppKey, options, QiyuGlideImageLoader(context))
+        val isInit = Unicorn.init(context, qiyuAppKey, options, QiyuGlideImageLoader(context))
+        result.success(isInit);
         Log.d(tag, "Android - initialize - AppKey($qiyuAppKey), deviceIdentifier($deviceIdentifier)")
     }
 
@@ -100,10 +104,13 @@ class QiyuManager(private val context: Context) {
         userInfo.userId = userId
         // 用戶資訊
         userInfo.data = userInfoDataList
-        if (Unicorn.setUserInfo(userInfo)) {
+        val isSuccessful = Unicorn.setUserInfo(userInfo)
+        if (isSuccessful) {
             Log.d(tag, "Android - setUserInfo() - success")
+            result.success(true)
         } else {
             Log.d(tag, "Android - setUserInfo() - failure")
+            result.success(false)
         }
     }
 
@@ -138,6 +145,7 @@ class QiyuManager(private val context: Context) {
      */
     fun logout() {
         Unicorn.logout()
+        result.success(true)
         Log.d(tag, "Android - logout() - success")
     }
 }

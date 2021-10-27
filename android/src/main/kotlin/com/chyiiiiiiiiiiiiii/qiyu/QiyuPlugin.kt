@@ -28,7 +28,7 @@ class QiyuPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     val sendData: Any? = call.arguments
     ///
-    val qiyuManager = QiyuManager(applicationContext)
+    val qiyuManager = QiyuManager(call, result, applicationContext)
     when (call.method) {
       "initialize" -> {
         val appKey = call.argument<String>("appKey")

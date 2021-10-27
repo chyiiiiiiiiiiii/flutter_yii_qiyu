@@ -45,17 +45,17 @@ class Qiyu {
   // 1. 用戶ID
   // 2. 用戶的資料清單，每一項資料為一個物件
   // 注意：需要在用戶登出的情況下，才能正常設置新的用戶資訊
-  static Future<void> setUserInfo({
+  static Future<bool> setUserInfo({
     required String userId,
     required List<QiyuUserInfoData> userInfoDataList,
   }) async {
     if (userId.isEmpty) {
       debugPrint('[$tag] - userId can not be empty');
-      return;
+      return false;
     }
     if (userInfoDataList.isEmpty) {
       debugPrint('[$tag] - data length can not be empty');
-      return;
+      return false;
     }
     // Use json.encode() to get original json-string
     String jsonString = userInfoDataList
@@ -64,10 +64,11 @@ class Qiyu {
         })
         .toList()
         .toString();
-    await _channel.invokeMethod('setUserInfo', {
+    final bool isSuccessful = await _channel.invokeMethod('setUserInfo', {
       'userId': userId,
       'userInfoDataList': jsonString,
     });
+    return isSuccessful;
   }
 
   // 開啟客服頁面
@@ -76,7 +77,8 @@ class Qiyu {
   }
 
   // 登出用戶
-  static Future<void> logoutUser() async {
-    await _channel.invokeMethod('logoutUser');
+  static Future<bool> logoutUser() async {
+    final bool isFinished = await _channel.invokeMethod('logoutUser');
+    return isFinished;
   }
 }
