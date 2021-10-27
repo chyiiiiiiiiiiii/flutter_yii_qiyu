@@ -12,7 +12,7 @@ public class SwiftQiyuPlugin: NSObject, FlutterPlugin {
         let method = call.method
         let arguments = call.arguments as? Dictionary<String, Any>
         //
-        let qiyuManager = QiyuManager(arguments: arguments)
+        let qiyuManager = QiyuManager(arguments: arguments, result: result)
         //
         switch(method){
         case "initialize":

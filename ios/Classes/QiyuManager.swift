@@ -13,10 +13,11 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
     let TAG = "[QiyuManager]"
     
     private var arguments: Dictionary<String, Any>? = nil
+    private var result: FlutterResult
 
-
-    init(arguments: Dictionary<String, Any>?) {
+    init(arguments: Dictionary<String, Any>?, result: @escaping FlutterResult) {
         self.arguments = arguments
+        self.result = result
     }
 
     func initQiYu() {
@@ -27,7 +28,7 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
         let qyOption: QYSDKOption = QYSDKOption(appKey: appKey)
         qyOption.appName = appName
         QYSDK.shared().register(with: qyOption)
-        print("Qiyu - iOS - initialize - AppKey(\(appKey)), AppName(\(appName))")
+        print("Qiyu - iOS - initialize - AppKey(\(appKey)), AppName(\(appName))")        
         // 對話
         QYSDK.shared().conversationManager().setDelegate(self)
     }
@@ -46,9 +47,11 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
         QYSDK.shared().setUserInfo(userInfo) { b, e in
             if let error = e {
                 print("Qiyu - iOS - setUserInfo() - failure - \(error.localizedDescription)")
+                self.result(false)
                 return
             }
             print("Qiyu - iOS - setUserInfo() - success")
+            self.result(true)
         }
     }
     
@@ -63,6 +66,7 @@ public class QiyuManager: NSObject, QYConversationManagerDelegate {
     func logout() {
         QYSDK.shared().logout { b in
             print("Qiyu - iOS - Log out - \(b)")
+            self.result(b)
         }
     }
     
