@@ -49,7 +49,6 @@ class _MyAppState extends State<MyApp> {
       list.add(QiyuUserInfoData(key: 'email', value: 'yii@gmail.com', label: '信箱'));
       list.add(QiyuUserInfoData(key: 'city', value: 'Taichung', label: '城市', index: 0));
       await Qiyu.setUserInfo(userId: 'yii${Random().nextInt(1000000)}', userInfoDataList: list);
-      // await Qiyu.setDeviceIdentifier(deviceIdentifier: deviceIdentifier);
     });
   }
 
