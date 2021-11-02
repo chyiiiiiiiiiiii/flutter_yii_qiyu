@@ -38,7 +38,7 @@ class QiyuManager(private val call: MethodCall, private val result: MethodChanne
             deviceId = deviceIdentifier
             // 設置省電資訊
             val savePowerConfig = SavePowerConfig()
-            savePowerConfig.customPush = false
+            savePowerConfig.customPush = true
             savePowerConfig.deviceIdentifier = deviceIdentifier
             options.savePowerConfig = savePowerConfig
             // 取得漫遊訊息，合併同個用戶在不同裝置的聊天紀錄

@@ -39,16 +39,17 @@ class _MyAppState extends State<MyApp> {
       deviceIdentifier = androidDevice.androidId;
     }
     // 初始化
-    await Qiyu.initialize(appKey: 'd433ac25ced4170d98a66b3eda15ecb1', appName: 'qiyu-plugin-example', deviceIdentifier: deviceIdentifier);
+    await Qiyu.initialize(appKey: 'd433ac25ced4170d98a66b3eda15easd', appName: 'qiyu-plugin-example', deviceIdentifier: deviceIdentifier);
     await Qiyu.logoutUser();
     Future.delayed(const Duration(seconds: 2), () async {
-      // 設置用戶資訊
+      // 設置用戶資訊3
       List<QiyuUserInfoData> list = [];
-      list.add(QiyuUserInfoData(key: 'real_name', value: 'Test(${Random().nextInt(100)})', label: '名字'));
-      list.add(QiyuUserInfoData(key: 'mobile_phone', value: '0939552111', label: '電話'));
-      list.add(QiyuUserInfoData(key: 'email', value: 'yii@gmail.com', label: '信箱'));
-      list.add(QiyuUserInfoData(key: 'city', value: 'Taichung', label: '城市', index: 0));
-      await Qiyu.setUserInfo(userId: 'yii${Random().nextInt(1000000)}', userInfoDataList: list);
+      list.add(QiyuUserInfoData(key: 'real_name', value: 'Test(888)', label: '名字'));
+      list.add(QiyuUserInfoData(key: 'mobile_phone', value: '0939552999', label: '電話'));
+      list.add(QiyuUserInfoData(key: 'email', value: '999@gmail.com', label: '信箱'));
+      list.add(QiyuUserInfoData(key: 'city', value: 'Taipei', label: '城市', index: 0));
+      await Qiyu.setUserInfo(userId: 'yii888', userInfoDataList: list);
+      await Qiyu.setDeviceIdentifier(deviceIdentifier: deviceIdentifier);
     });
   }
 
