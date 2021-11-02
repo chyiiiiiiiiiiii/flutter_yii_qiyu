@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/ysf_bubble_content_max_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ysf_tv_msg_event_base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/ysf_black_333333"
+        android:textSize="@dimen/ysf_text_size_16sp"
+        tools:text="111111111"/>
+
+    <LinearLayout
+        android:id="@+id/ysf_divider_evaluation_event_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+    <include
+        layout="@layout/ysf_include_divider" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/ysf_btn_msg_event_base"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ysf_holder_event_btn_bg"
+        android:gravity="center"
+        android:text="@string/ysf_cancel_in_queue"
+        android:textColor="@color/ysf_grey_666666"
+        android:textSize="@dimen/ysf_text_size_16"/>
+    <LinearLayout
+        android:id="@+id/ysf_ll_msg_event_base_btn_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

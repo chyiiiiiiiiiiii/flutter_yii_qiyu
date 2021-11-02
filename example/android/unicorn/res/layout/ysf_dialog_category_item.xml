@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/ysf_dialog_item_middle_selector">
+
+    <TextView
+        android:id="@+id/ysf_dialog_category_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/ysf_blue_337EFF"
+        android:textSize="@dimen/ysf_text_size_16"
+        tools:text="售前客服" />
+
+    <View
+        android:id="@+id/ysf_dialog_category_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ysf_divider_height"
+        android:layout_gravity="bottom"
+        android:background="@color/ysf_grey_f1f1f1" />
+</FrameLayout>

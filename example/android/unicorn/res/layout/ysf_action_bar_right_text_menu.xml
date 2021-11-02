@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_right_clickable_text"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/ysf_action_bar_height"
+    android:gravity="center"
+    android:maxLines="1"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:textColor="@color/ysf_title_bar_text_color_dark_selector"
+    android:textSize="@dimen/ysf_text_size_14" />

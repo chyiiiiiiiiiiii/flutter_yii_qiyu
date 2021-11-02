@@ -2,7 +2,6 @@ package com.chyiiiiiiiiiiiiii.qiyu
 
 import android.content.Context
 import android.util.Log
-import androidx.annotation.NonNull
 import com.qiyukf.unicorn.api.*
 import com.qiyukf.unicorn.api.msg.UnicornMessage
 import io.flutter.plugin.common.MethodCall
@@ -12,23 +11,23 @@ import java.util.*
 class QiyuManager(private val call: MethodCall, private val result: MethodChannel.Result, private val context: Context) {
     
     companion object{
-        const val tag = "Qiyu"
+        const val tag = "QiyuManager"
     }
 
-    var deviceId : String = ""
+    private var deviceId : String = ""
 
     // 七魚客服 - 初始化
     // 1. 七魚後台的App Key
     // 2. 添加APP之後顯示的App Name
     // 3. Android推播，給開發者進行伺服器推播使用，DB可能需要紀錄每個用戶的裝置ID，對應的是推播Token，經由Token送出推播
-    fun initQiyu(qiyuAppKey: String? = "", deviceIdentifier: String?, needLocalNotification: Boolean = false) {
-        val options = getMyOptions(deviceIdentifier)
-        if (needLocalNotification) {
-            options.statusBarNotificationConfig = getMyStatusBarNotificationConfig()
-        }
-        val isInit = Unicorn.init(context, qiyuAppKey, options, QiyuGlideImageLoader(context))
+    fun initQiyu(needLocalNotification: Boolean = false) {
+        val appKey: String? = call.argument<String>("appKey")
+//        val appName: String? = call.argument<String>("appName")
+        val deviceIdentifier: String? = call.argument<String>("deviceIdentifier")
+        //
+        val isInit = Unicorn.init(context, appKey, getMyOptions(deviceIdentifier), QiyuGlideImageLoader(context))
         result.success(isInit);
-        Log.d(tag, "Android - initialize - AppKey($qiyuAppKey), deviceIdentifier($deviceIdentifier)")
+        Log.d(tag, "Android - initialize - AppKey($appKey), deviceIdentifier($deviceIdentifier)")
     }
 
     // 取得基本配置
@@ -36,18 +35,17 @@ class QiyuManager(private val call: MethodCall, private val result: MethodChanne
         val options = YSFOptions()
         if (deviceIdentifier != null) {
             deviceId = deviceIdentifier
-            // 設置省電資訊
             val savePowerConfig = SavePowerConfig()
             savePowerConfig.customPush = true
             savePowerConfig.deviceIdentifier = deviceIdentifier
             options.savePowerConfig = savePowerConfig
-            // 取得漫遊訊息，合併同個用戶在不同裝置的聊天紀錄
             options.isPullMessageFromServer = true;
             Log.d(tag, "Android - deviceIdentifier - ${options.savePowerConfig.deviceIdentifier}")
         }
         return options
     }
 
+    // 本地通知，接收客服的訊息，只有APP開啟時才會收到
     fun getMyStatusBarNotificationConfig(): StatusBarNotificationConfig {
         val statusBarNotificationConfig = StatusBarNotificationConfig()
 //        statusBarNotificationConfig.contentTitle = ""
@@ -79,7 +77,7 @@ class QiyuManager(private val call: MethodCall, private val result: MethodChanne
          * @param title   聊天窗口的標題
          * @param source  諮詢的發起來源，包括發起諮詢的url，title，描述信息等
          */
-        val title = "Help"
+        val title = "Support"
         Unicorn.openServiceActivity(context, title, source)
         Log.d(tag, "Android - showServiceActivity()")
     }
@@ -87,18 +85,22 @@ class QiyuManager(private val call: MethodCall, private val result: MethodChanne
     /**
      * 設置設備的硬體ID，唯一
      */
-    fun setDeviceIdentifier(deviceIdentifier: String?) {
-        val options = getMyOptions(deviceIdentifier)
-        Unicorn.updateOptions(options)
-        Log.d(tag, "Android - deviceIdentifier - ${deviceIdentifier}")
+    fun setDeviceIdentifier() {
+        val deviceIdentifier: String? = call.argument<String>("deviceIdentifier")
+        //
+        Unicorn.updateOptions(getMyOptions(deviceIdentifier))
+        Log.d(tag, "Android - deviceIdentifier - $deviceIdentifier")
     }
 
     /**
      * 設置用戶資訊
      */
-    fun setUserInfo(userId: String, userInfoDataList: String) {
+    fun setUserInfo() {
+        val userId: String? = call.argument<String>("userId")
+        val userInfoDataList: String? = call.argument<String>("userInfoDataList")
         Log.d(tag, "Android - setUserInfo() - userId - $userId")
         Log.d(tag, "Android - setUserInfo() - dataList - $userInfoDataList")
+        //
         val userInfo = YSFUserInfo()
         // 用戶ID
         userInfo.userId = userId

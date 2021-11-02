@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ysf_app_name">网易七鱼</string>
+    <string name="ysf_ok">确定</string>
+    <string name="ysf_cancel">取消</string>
+    <string name="ysf_yes">是</string>
+    <string name="ysf_no">否</string>
+    <string name="ysf_loading">正在加载…</string>
+    <string name="ysf_network_broken">网络异常，请稍后再试</string>
+    <string name="ysf_close">关闭</string>
+    <string name="ysf_message_new_message_tips">%1$d条未读消息</string>
+    <string name="ysf_ok_check">确定(可多选)</string>
+
+    <!-- session -->
+    <string name="ysf_msg_notify_custom_default">自定义消息</string>
+    <string name="ysf_msg_notify_custom_send">发送了一条消息</string>
+    <string name="ysf_msg_notify_default_title">新消息</string>
+    <string name="ysf_msg_notify_hide">你收到一条新消息</string>
+    <string name="ysf_msg_notify_multi_person">%1$d位联系人有新消息</string>
+    <string name="ysf_msg_notify_ticker_text">%1$s有新消息</string>
+    <string name="ysf_msg_notify_file">[文件]</string>
+    <string name="ysf_msg_notify_image">[图片]</string>
+    <string name="ysf_msg_notify_audio">[语音]</string>
+    <string name="ysf_msg_notify_location">[位置]</string>
+    <string name="ysf_input_panel_photo">图 片</string>
+    <string name="ysf_input_panel_take">拍 照</string>
+    <string name="ysf_re_download_message">重新下载？</string>
+    <string name="ysf_re_send_has_blank">重 发</string>
+    <string name="ysf_re_send_message">重发消息？</string>
+    <string name="ysf_copy_has_blank">复 制</string>
+    <string name="ysf_delete_has_blank">删 除</string>
+    <string name="ysf_save_to_device">保存到手机</string>
+    <string name="ysf_picture_save_fail">图片保存失败</string>
+    <string name="ysf_watch_picture_activity_label">查看图片</string>
+    <string name="ysf_picture_save_to">图片已保存到手机</string>
+    <string name="ysf_send">&#160;发送&#160;</string>
+    <string name="ysf_unknown_title">无法显示该内容</string>
+    <string name="ysf_unknown_desc">客户端版本不支持该内容</string>
+    <string name="ysf_requesting_staff">正在连接</string>
+    <string name="ysf_send_message_disallow_as_requesting">请等待连接成功后，再发送消息</string>
+    <string name="ysf_group_status_toast">为了给您提供更专业的服务，请您选择要咨询的内容类型</string>
+    <string name="ysf_retry_connect">重新连接</string>
+    <string name="ysf_some_error_happened">连接失败，您可以尝试</string>
+    <string name="ysf_inputing_title">对方正在输入...</string>
+    <string name="ysf_no_staff">当前客服不在线，如需帮助请留言</string>
+    <string name="ysf_no_staff_disabled">客服不在线，不支持留言</string>
+    <string name="ysf_leave_message">留言</string>
+    <string name="ysf_network_error">网络连接失败，请稍后再试</string>
+    <string name="ysf_staff_assigned">%1$s为您服务</string>
+    <string name="ysf_staff_assigned_with_group">%1$s的%2$s为您服务</string>
+    <string name="ysf_service_in_queue">排队中，您排在第%1$d位，排到将自动接入</string>
+    <string name="ysf_service_in_queue_hide_length">当前排队人数较多，请耐心等待…</string>
+    <string name="ysf_service_quit_queue">退出排队</string>
+    <string name="ysf_service_product_invalid">当前没有客服在线</string>
+    <string name="ysf_evaluation">评价</string>
+    <string name="ysf_evaluation_complete">已评价</string>
+    <string name="ysf_evaluation_tips">请对本次服务进行评价</string>
+    <string name="ysf_evaluation_bubble_remark_tips">填写备注</string>
+    <string name="ysf_evaluation_modify">修改评价</string>
+    <string name="ysf_evaluation_time_out">评价已超时，无法进行评价</string>
+    <string name="ysf_evaluation_satisfied">满意</string>
+    <string name="ysf_evaluation_dissatisfied">不满意</string>
+    <string name="ysf_evaluation_much_dissatisfied">非常不满意</string>
+    <string name="ysf_evaluation_common">一般</string>
+    <string name="ysf_evaluation_much_satisfied">非常满意</string>
+    <string name="ysf_evaluation_dialog_et_hint_remark">请输入您要反馈的意见</string>
+    <string name="ysf_evaluation_btn_submit">提交评价</string>
+    <string name="ysf_evaluation_remark_done">完成</string>
+    <string name="ysf_evaluation_bubble_btn_submit">提交</string>
+    <string name="ysf_evaluation_btn_submitting">提交中…</string>
+    <string name="ysf_evaluation_message_item_text">感谢您的咨询，请对我们的服务做出评价</string>
+    <string name="ysf_evaluation_msg_result_tip">已收到您的评价，非常感谢！</string>
+    <string name="ysf_evaluation_message_item_btn">评价</string>
+    <string name="ysf_evaluation_result_default_prefix">你对我们的服务评价为</string>
+    <string name="ysf_evaluation_result_suffix">非常感谢！</string>
+    <string name="ysf_evaluation_dialog_message">是否放弃评价，放弃后不可恢复</string>
+    <string name="ysf_evaluation_dialog_message_multi">是否放弃评价</string>
+    <string name="ysf_evaluation_error">评价失败，请稍后重试</string>
+    <string name="ysf_evaluation_timeout">评价已超时</string>
+    <string name="ysf_evaluation_empty_label">请选择标签</string>
+    <string name="ysf_evaluation_empty_remark">请填写评价备注</string>
+    <string name="ysf_robot_answer_useful">有用</string>
+    <string name="ysf_robot_answer_useless">没用</string>
+    <string name="ysf_menu_request_staff">人工客服</string>
+    <string name="ysf_menu_request_vip_staff">专属客服</string>
+    <string name="ysf_menu_shop_name">商家</string>
+    <string name="ysf_menu_close_session">退出</string>
+    <string name="ysf_dialog_close_session">确认退出对话？</string>
+    <string name="ysf_dialog_quit_queue">确认退出排队？</string>
+    <string name="ysf_dialog_message_queue">是否继续咨询在线客服？您可以先去逛逛，排队成功后将提醒您</string>
+    <string name="ysf_service_title_default">在线客服</string>
+    <string name="ysf_service_source_title_notification">通知栏</string>
+    <string name="ysf_msg_quit_session_failed">退出对话失败，请稍后再试</string>
+    <string name="ysf_msg_quit_queue_failed">退出排队失败，请稍后再试</string>
+    <string name="ysf_msg_quit_session_tips">您退出了咨询</string>
+    <string name="ysf_robot_evaluate_disable">会话已结束，暂不支持评价</string>
+    <string name="ysf_msg_file_downloaded">已下载</string>
+    <string name="ysf_msg_file_expired">已过期</string>
+    <string name="ysf_msg_file_not_downloaded">未下载</string>
+    <string name="ysf_staff_name_group">客服分组</string>
+    <string name="ysf_message_text_yidun_tips">消息包含违禁信息，发送失败</string>
+    <string name="ysf_message_robot_evaluation_guide">感谢你的评价，请填写具体原因供我们改进</string>
+    <string name="ysf_message_robot_evaluation_hint">填写具体原因</string>
+    <string name="ysf_transfer_staff_error">转接失败，请稍后重试</string>
+    <string name="ysf_send_string">发送</string>
+    <string name="ysf_cancel_in_queue">取消排队</string>
+    <string name="ysf_already_cancel">已取消</string>
+
+    <!--留言-->
+    <string name="ysf_leave_msg_delete_prompt">要删除这张照片吗？</string>
+    <string name="ysf_leave_msg_sure">确定</string>
+    <string name="ysf_leave_msg_success_str">留言成功</string>
+    <string name="ysf_leave_msg_menu_item_none">请选择</string>
+    <string name="ysf_leave_msg_menu_item_all">全部选择</string>
+    <string name="ysf_leave_custom_field_commit_success">提交成功</string>
+    <string name="ysf_leave_msg_custom_field_abort_commit_confirm">确定放弃当前编辑内容吗？</string>
+    <string name="ysf_leave_msg_menu_required_tips">必填项不能为空</string>
+    <string name="ysf_leave_msg_null_tip">请输入留言</string>
+    <string name="ysf_leave_msg_annex_toast">附件未填</string>
+    <string name="ysf_leave_msg_input_hint">客服离线状态，暂不可发消息</string>
+    <string name="ysf_leave_msg_process_hint">您的留言已收到，我们会尽快处理</string>
+    <string name="ysf_leave_msg_my_leave_msg">我的留言表单</string>
+    <string name="ysf_leave_msg_title">填写留言</string>
+    <string name="ysf_leave_msg_empty">留言不能为空</string>
+    <string name="ysf_leave_activity_label">留言模版</string>
+    <string name="ysf_leave_menu_activity_label">留言选项选择界面</string>
+
+    <!-- 语音 -->
+    <string name="ysf_audio_record_touch_to_record">按住 说话</string>
+    <string name="ysf_audio_record_up_to_complete">松开 结束</string>
+    <string name="ysf_audio_record_move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="ysf_audio_record_alert">说话时间太短</string>
+    <string name="ysf_audio_record_time_is_up_tips">说话时间已到%1$d秒</string>
+    <string name="ysf_audio_record_sdcard_not_exist_error">请插入SD卡</string>
+    <string name="ysf_audio_record_cancel_tip">松开手指，取消发送</string>
+    <string name="ysf_audio_play_by_earphone">使用听筒播放</string>
+    <string name="ysf_audio_play_by_speaker">使用扬声器播放</string>
+    <string name="ysf_audio_is_playing_by_earphone">正在使用听筒播放</string>
+    <string name="ysf_audio_current_mode_is_earphone">当前为听筒模式</string>
+    <string name="ysf_audio_current_mode_is_speaker">当前为扬声器模式</string>
+    <string name="ysf_audio_switch_to_speaker">已从听筒切换为扬声器播放</string>
+    <string name="ysf_audio_under_translating">转换中…</string>
+    <string name="ysf_audio_translate">语音转换文字</string>
+    <string name="ysf_audio_translate_failed">转换失败</string>
+    <string name="ysf_audio_translate_to_text_failed">语音转文字失败</string>
+
+    <!--视频-->
+    <string name="ysf_look_video_fail_try_again">暂时无法播放视频，请重试</string>
+    <string name="ysf_download_video">正在下载视频</string>
+    <string name="ysf_download_video_fail">视频下载失败,请重试</string>
+    <string name="ysf_look_video_fail">无法播放该视频</string>
+    <string name="ysf_video_play">视频播放</string>
+    <string name="ysf_video_record">视频录制</string>
+    <string name="ysf_video_record_symbol">REC</string>
+    <string name="ysf_video_record_begin">开始录制</string>
+    <string name="ysf_connect_vedio_device_fail">无法连接视频设备 ，请稍候再试</string>
+    <string name="ysf_capture_video_size_in_kb">视频文件大小为: %1$dKB,</string>
+    <string name="ysf_capture_video_size_in_mb">视频文件大小为: %1$.2fMB,</string>
+    <string name="ysf_is_send_video">是否发送该视频？</string>
+    <string name="ysf_start_camera_to_record_failed">启动摄像头录制视频失败</string>
+    <string name="ysf_stop_fail_maybe_stopped">停止失败，可能已经停止</string>
+    <string name="ysf_video_exception">视频文件异常</string>
+    <string name="ysf_media_exception">媒体文件异常</string>
+    <string name="ysf_copy_file_exception">复制文件异常</string>
+    <string name="ysf_album_activity_label">媒体文件预览界面</string>
+    <string name="ysf_selected_preview_activity_label">已经选择媒体文件预览界面</string>
+    <string name="ysf_im_choose_video_file_size_too_large">视频文件过大，系统限制为20MB</string>
+    <string name="ysf_im_choose_video">请选择3GP MP4格式的视频文件</string>
+    <string name="ysf_video_record_short">录制至少录制1秒</string>
+    <string name="ysf_pick_video_record">拍摄视频</string>
+    <string name="ysf_download_progress_description">%1$s（%2$s/%3$s）</string>
+    <string name="ysf_video_save_fail">视频保存失败</string>
+    <string name="ysf_video_save_success">视频保存成功</string>
+    <string name="ysf_video_save_to">视频已保存到手机，请在</string>
+    <string name="ysf_video_save_to_local">保存至本地</string>
+    <string name="ysf_choose_video">请选择3GP MP4格式的视频文件</string>
+    <string name="ysf_matiss_activity_label">媒体文件选择界面</string>
+    <string name="ysf_pick_file_activity_label">文件选择</string>
+
+    <!-- image picker -->
+    <string name="ysf_picker_image_sdcard_not_enough_error">SD卡被拔出存储空间不足，无法保存此次多媒体消息</string>
+    <string name="ysf_picker_image_choose_from_photo_album">从手机相册选择</string>
+    <string name="ysf_picker_video_from_photo_album">从本地视频选择</string>
+    <string name="ysf_picker_image_preview">预览</string>
+    <string name="ysf_picker_image_folder">相册</string>
+    <string name="ysf_picker_image_album_loading">相册加载中…</string>
+    <string name="ysf_picker_image_album_empty">相册中没有图片！</string>
+    <string name="ysf_picker_image_folder_info">共%d张</string>
+    <string name="ysf_picker_image_exceed_max_image_select">最多选择%d张图片！</string>
+    <string name="ysf_picker_image_send_select">完成(%d)</string>
+    <string name="ysf_picker_image_preview_original">发送原图</string>
+    <string name="ysf_picker_image_preview_original_select">发送原图(%s)</string>
+    <string name="ysf_picker_image_error">目前仅支持jpg/png/bmp/gif格式图片的传送</string>
+    <string name="ysf_image_retake">重拍</string>
+    <string name="ysf_image_show_error">图片显示异常</string>
+    <string name="ysf_image_out_of_memory">内存不足</string>
+    <string name="ysf_image_download_failed">图片下载失败</string>
+
+    <!--权限-->
+    <string name="ysf_no_permission_camera">没有权限，无法拍照！</string>
+    <string name="ysf_no_permission_photo">没有权限，无法打开相册！</string>
+    <string name="ysf_no_permission_send_audio">没有权限，无法发送语音！</string>
+    <string name="ysf_no_permission_audio_error">消息未下载完毕或者消息错误！</string>
+    <string name="ysf_no_permission_save_image">没有权限，无法保存图片！</string>
+    <string name="ysf_no_permission_video">没有权限，无法拍摄！</string>
+
+    <!--ptr-->
+    <string name="ysf_ptr_pull_to_refresh">下拉刷新</string>
+    <string name="ysf_ptr_release_to_refresh">释放立即刷新</string>
+    <string name="ysf_ptr_refreshing">正在刷新…</string>
+    <string name="ysf_ptr_refresh_succeed">刷新成功</string>
+    <string name="ysf_ptr_refresh_failed">刷新失败，请稍后再试</string>
+    <string name="ysf_ptr_pull_to_load">加载更多</string>
+    <string name="ysf_ptr_release_to_load">释放立即加载</string>
+    <string name="ysf_ptr_loading">正在加载…</string>
+    <string name="ysf_ptr_load_succeed">加载成功</string>
+    <string name="ysf_ptr_load_failed">加载失败，请稍后再试</string>
+    <string name="ysf_ptr_load_completed">没有更多了</string>
+
+    <!--bot-->
+    <string name="ysf_bot_load_more_disabled">会话已结束，无法加载</string>
+    <string name="ysf_bot_order_list_title">请选择你想咨询的订单</string>
+    <string name="ysf_bot_form_disabled">会话已结束，表单已失效</string>
+    <string name="ysf_bot_form_upload_image">上传图片</string>
+    <string name="ysf_bot_form_uploading_image">正在上传图片</string>
+    <string name="ysf_bot_form_upload_image_failed">上传图片失败</string>
+    <string name="ysf_bot_form_input">填写表单</string>
+    <string name="ysf_bot_form_can_not_empty">此信息不得为空</string>
+    <string name="ysf_bot_send_product_fail">会话已结束，无法发送</string>
+    <string name="ysf_done">确认</string>
+    <string name="ysf_see_more">查看更多</string>
+
+    <string name="ysf_activity_file_download">文件预览</string>
+    <string name="ysf_download_network_not_available">当前网络不可用，请检查你的网络</string>
+    <string name="ysf_download_tips_title">下载文件将产生手机流量</string>
+    <string name="ysf_download_tips_message">检测到您处于非WIFI环境下，下载文件将产生手机流量，是否确认继续下载？</string>
+    <string name="ysf_download_tips_sure">确认下载</string>
+    <string name="ysf_file_download_file_size">文件大小：%s</string>
+    <string name="ysf_file_download_progress">正在下载…(%1$s/%2$s)</string>
+    <string name="ysf_file_download">下载</string>
+    <string name="ysf_file_open">用其他应用打开</string>
+    <string name="ysf_file_open_tips">七鱼暂时无法打开此类文件，可使用其他应用打开并预览</string>
+    <string name="ysf_file_download_fail">文件下载失败</string>
+    <string name="ysf_file_out_of_date">文件已过期，不能下载</string>
+    <string name="ysf_file_invalid">文件已失效</string>
+    <string name="ysf_file_open_fail">暂无可打开该文件的应用</string>
+    <string name="ysf_activity_leave_message_detail">详情</string>
+    <string name="ysf_enter_store">进店</string>
+    <string name="ysf_send_card_robot">发送失败，机器人看不懂卡片哦</string>
+    <string name="ysf_send_card_error">发送失败，会话已结束</string>
+    <string name="ysf_robot_msg_invalid">消息已失效，无法选择</string>
+
+
+    <!--mediaselect-->
+    <string name="ysf_album_name_all">全部</string>
+    <string name="ysf_button_preview">预览</string>
+    <string name="ysf_button_apply_default">使用</string>
+    <string name="ysf_button_apply">使用(%1$d)</string>
+    <string name="ysf_button_back">返回</string>
+    <string name="ysf_photo_grid_capture">拍一张</string>
+    <string name="ysf_empty_text">还没有图片或视频</string>
+    <string name="ysf_button_ok">我知道了</string>
+    <string name="ysf_error_over_count_default">您已经达到最大选择数量</string>
+    <string name="ysf_error_over_count">最多只能选择 %1$d 个文件</string>
+    <string name="ysf_error_under_quality">图片质量太低</string>
+    <string name="ysf_error_over_quality">图片质量太高</string>
+    <string name="ysf_error_file_type">不支持的文件类型</string>
+    <string name="ysf_error_type_conflict">不能同时选择图片和视频</string>
+    <string name="ysf_error_no_video_activity">没有支持视频预览的应用</string>
+    <string name="ysf_error_over_original_size">"该照片大于 %1$d M，无法上传将取消勾选原图"</string>
+    <string name="ysf_error_over_original_count">"有 %1$d 张照片大于 %2$d M\n无法上传，将取消勾选原图"</string>
+    <string name="ysf_button_original">原图</string>
+    <string name="ysf_button_sure_default">确定</string>
+    <string name="ysf_button_sure">确定(%1$d)</string>
+    <string name="ysf_error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+    <string name="ysf_exceed_limit_str">对不起，您选择的文件超过了限制</string>
+    <string name="ysf_file_limit_str"> 已为您过滤时长超过30秒，大小超过50M的视频</string>
+    <plurals name="error_over_count">
+        <item quantity="one">最多只能选择 %1$d 个文件</item>
+        <item quantity="few">最多只能选择 %1$d 个文件</item>
+        <item quantity="many">最多只能选择 %1$d 个文件</item>
+        <item quantity="other">最多只能选择 %1$d 个文件</item>
+    </plurals>
+
+
+    <!--工单相关-->
+    <string name="ysf_work_sheet_label">工单</string>
+    <string name="ysf_work_sheet_auth">填写信息</string>
+    <string name="ysf_work_sheet_item_none">未选择</string>
+    <string name="ysf_work_sheet_session_change">工单已过期</string>
+
+
+    <string name="ysf_staff_withdrawal_str">“%1$s”撤回了一条消息</string>
+    <string name="ysf_copy_phone_str">复制号码</string>
+    <string name="ysf_copy_phone_success_str">复制成功</string>
+    <string name="ysf_go_call_error">复制成功</string>
+    <string name="ysf_copy_phone_error_str">复制失败</string>
+    <string name="ysf_call_str">呼叫</string>
+
+    <!--文件选择相关-->
+    <string name="ysf_file_NotFoundBooks">请选择导入的图书</string>
+    <string name="ysf_file_NotFoundPath">SD 存储卡状态不可用</string>
+    <string name="ysf_file_UpOneLevel">上一级</string>
+    <string name="ysf_file_Selected">选中( %s )</string>
+    <string name="ysf_file_LItem">%s 项</string>
+    <string name="ysf_file_Detail">详情</string>
+    <string name="ysf_file_FileSize">文件大小 : %s</string>
+    <string name="ysf_file_OutSize">已经达到最大选择数量</string>
+    <string name="ysf_file_SelectAll">全选</string>
+    <string name="ysf_file_Cancel">取消全选</string>
+    <string name="ysf_file_OK">确定</string>
+    <string name="ysf_file_ChooseTip">请选择文件夹</string>
+
+</resources>

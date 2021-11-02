@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/ysf_tag_text"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ysf_evaluation_tag_bg_selector"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/ysf_evaluator_label_color"
+        android:gravity="center"
+        tools:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        android:textSize="@dimen/ysf_text_size_12" />
+</FrameLayout>

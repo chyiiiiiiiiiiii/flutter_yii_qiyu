@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="158dp"
+    android:layout_height="245dp"
+    android:background="@drawable/ysf_item_product_reselect_back">
+    <ImageView
+        android:id="@+id/ysf_iv_item_recommend_empty"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ysf_horizontal_refresh"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:text="换一批"/>
+</FrameLayout>

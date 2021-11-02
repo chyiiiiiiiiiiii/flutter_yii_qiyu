@@ -47,8 +47,8 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    // 七鱼客服
-    implementation 'com.qiyukf.unicorn:unicorn:5.7.8'
+    // 七鱼客服，5.7.9本地修復包
+    implementation project(path: ':unicorn')
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.10.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'

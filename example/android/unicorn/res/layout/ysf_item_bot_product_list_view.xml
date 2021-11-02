@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.qiyukf.unicorn.widget.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/ysf_ptl_bot_product_list_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <com.qiyukf.unicorn.widget.pulltorefresh.PullableListView
+        android:id="@+id/ysf_plv_bot_product_list_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/ysf_grey_dbdbdb"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent" />
+    </com.qiyukf.unicorn.widget.pulltorefresh.PullToRefreshLayout>
+    <TextView
+        android:id="@+id/ysf_tv_bot_product_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

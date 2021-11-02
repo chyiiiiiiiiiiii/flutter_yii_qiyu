@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.qiyukf.nim.uikit.common.ui.imageview.MsgThumbImageView
+        android:id="@+id/message_item_thumb_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:padding="0dip"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/tv_ysf_item_message_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:textColor="@color/ysf_white"
+        android:textSize="10sp"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_ysf_item_message_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_gravity="bottom|right"
+        android:textColor="@color/ysf_white"
+        android:textSize="10sp"
+        android:paddingRight="5dp"
+        tools:text="00:21345345345345345345345345"/>
+
+    <ImageView
+        android:id="@+id/message_item_thumb_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+    <LinearLayout
+        android:id="@+id/message_item_video_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:focusable="false"
+            android:gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/ysf_video_play_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_item_thumb_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:text="99%"
+        android:textColor="@color/ysf_grey_c5c4c4" />
+
+    <TextView
+        android:id="@+id/ysf_tv_holder_video_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@drawable/ysf_holder_video_shadow"
+        tools:text="111111111111"/>
+
+
+</FrameLayout>

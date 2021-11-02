@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ysf_black">
+    <ImageView
+        android:id="@+id/ysf_iv_capture_video_finish"
+        android:layout_width="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ysf_ic_watch_video_finish_back"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <SurfaceView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/switch_cameras"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:contentDescription=""
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ysf_ic_cameras_select" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/ysf_transparent"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/recording_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ysf_record_start"
+            android:contentDescription="" />
+
+        <TextView
+            android:id="@+id/record_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:text="00:00"
+            android:textColor="@color/ysf_white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ysf_iv_capture_cancel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="60dip"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ysf_ic_video_record_back"/>
+    <ImageView
+        android:id="@+id/ysf_iv_capture_send"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dip"
+        android:src="@drawable/ysf_ic_video_record_send"/>
+
+    <ImageView
+        android:id="@+id/record_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dip"
+        android:contentDescription="" />
+    <ImageView
+        android:id="@+id/ysf_iv_video_select"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="60dip"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ysf_ic_add_white"/>
+
+    <include layout="@layout/ysf_include_video_progress_layout"/>
+</RelativeLayout>

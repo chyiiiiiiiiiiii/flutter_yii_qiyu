@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_nim_message_item_text_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/nim_message_item_text_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone|email"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="3dp"
+        android:maxWidth="@dimen/ysf_bubble_max_width"
+        android:layout_gravity="center"
+        android:textColor="@color/ysf_black_b3000000"
+        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/message_item_rich_gif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|top"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:id="@+id/iv_message_item_rich_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|top"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/tv_nim_message_item_url_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"/>
+    <TextView
+        android:id="@+id/tv_nim_message_item_url_button"
+        android:layout_width="match_parent"
+        android:layout_height="87.5px"
+        android:textSize="@dimen/ysf_text_size_14"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/ysf_blue_5092e1"
+        tools:text="123123"/>
+</LinearLayout>

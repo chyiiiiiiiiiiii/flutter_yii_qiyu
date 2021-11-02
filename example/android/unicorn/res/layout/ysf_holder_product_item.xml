@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="250dp"
+    android:layout_height="match_parent">
+    <include 
+        android:id="@+id/ysf_holder_product_item_content"
+        layout="@layout/ysf_bot_product_and_order_detail"/>
+    <include
+        android:id="@+id/ysf_holder_product_list_line"
+        layout="@layout/ysf_include_divider"/>
+    
+    <TextView
+        android:id="@+id/ysf_tv_holder_product_item_reselect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/ysf_blue_337EFF"
+        android:textSize="14sp"
+        android:text="重新选择"/>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ysf_tv_holder_bubble_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/ysf_black_333333"
+        android:layout_margin="12dp"
+        tools:text="选择咨询的订单"/>
+    <include layout="@layout/ysf_include_divider"/>
+    <LinearLayout
+        android:id="@+id/ysf_ll_holder_bubble_list_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ysf_tv_holder_bubble_list_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_gravity="center"
+        tools:text="空数据的展示文案"/>
+
+    <include
+        android:id="@+id/ysf_holder_bubble_list_line"
+        layout="@layout/ysf_include_divider"/>
+    
+    <TextView
+        android:id="@+id/ysf_tv_holder_bubble_list_more"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/ysf_blue_337EFF"
+        android:gravity="center"
+        android:text="查看更多"/>
+    
+</LinearLayout>

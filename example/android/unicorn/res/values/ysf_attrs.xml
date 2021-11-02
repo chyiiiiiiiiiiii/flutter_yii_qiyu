@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShapedImageView">
+        <attr name="ysf_siv_border_width" format="dimension" />
+        <attr name="ysf_siv_border_color" format="color" />
+        <attr name="ysf_siv_border_overlay" format="boolean" />
+        <attr name="ysf_siv_fill_color" format="color" />
+        <attr name="ysf_siv_shape" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FileNameTextView">
+        <attr name="ysf_fntText" format="string" />
+        <attr name="ysf_fntTextColor" format="color" />
+        <attr name="ysf_fntTextSize" format="dimension" />
+        <attr name="ysf_fntMaxLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MultipleStatusLayout">
+        <attr name="loadingView" format="reference" />
+        <attr name="errorView" format="reference" />
+        <attr name="emptyView" format="reference" />
+        <attr name="noNetworkView" format="reference" />
+        <attr name="customView" format="reference" />
+        <attr name="requestView" format="reference" />
+    </declare-styleable>
+
+</resources>

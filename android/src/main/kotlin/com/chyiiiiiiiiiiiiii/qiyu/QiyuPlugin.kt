@@ -14,11 +14,10 @@ import io.flutter.plugin.common.MethodChannel.Result
 
 /** QiyuPlugin */
 class QiyuPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
-  /// The MethodChannel that will the communication between Flutter and native Android
-  ///
-  /// This local reference serves to register the plugin with the Flutter Engine and unregister it
-  /// when the Flutter Engine is detached from the Activity
-  private val tag = "[QiyuPlugin]"
+
+  companion object{
+    const val tag = "[QiyuPlugin]"
+  }
 
   private lateinit var channel : MethodChannel
 
@@ -26,24 +25,16 @@ class QiyuPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private var activity: Activity? = null
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    val sendData: Any? = call.arguments
-    ///
     val qiyuManager = QiyuManager(call, result, applicationContext)
     when (call.method) {
       "initialize" -> {
-        val appKey = call.argument<String>("appKey")
-//        val appName = call.argument<String>("appName")
-        val deviceIdentifier = call.argument<String>("deviceIdentifier")
-        qiyuManager.initQiyu(appKey, deviceIdentifier)
+        qiyuManager.initQiyu()
       }
       "setDeviceIdentifier" -> {
-        val deviceIdentifier = call.argument<String>("deviceIdentifier")
-        qiyuManager.setDeviceIdentifier(deviceIdentifier)
+        qiyuManager.setDeviceIdentifier()
       }
       "setUserInfo" -> {
-        val userId = call.argument<String>("userId") ?: ""
-        val userInfoDataList = call.argument<String>("userInfoDataList") ?: ""
-        qiyuManager.setUserInfo(userId, userInfoDataList)
+        qiyuManager.setUserInfo()
       }
       "showCustomerService" ->{
         qiyuManager.showServiceActivity()
@@ -54,11 +45,6 @@ class QiyuPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       else -> {
         result.notImplemented()
       }
-    }
-    if (sendData != null) {
-      result.success(sendData)
-    } else {
-      result.success(null)
     }
   }
 

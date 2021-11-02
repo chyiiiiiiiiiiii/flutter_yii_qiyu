@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/ysf_message_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textColor="@color/ysf_notification_text"
+        android:textSize="@dimen/ysf_text_size_13"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/ysf_message_item_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ysf_message_item_time"
+        android:layout_marginBottom="@dimen/ysf_bubble_name_layout_margin_bottom"
+        android:layout_marginLeft="7dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxWidth="160dp"
+        android:singleLine="true"
+        android:textColor="@color/ysf_grey_999999"
+        android:textSize="@dimen/ysf_text_size_12"
+        android:visibility="gone" />
+
+    <com.qiyukf.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/ysf_message_item_portrait_left"
+        android:layout_width="@dimen/ysf_avatar_size"
+        android:layout_height="@dimen/ysf_avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ysf_message_item_nickname"
+        android:layout_marginRight="@dimen/ysf_bubble_head_margin_horizontal"
+        android:visibility="gone"
+        app:ysf_siv_border_color="@android:color/white"
+        app:ysf_siv_border_width="1dp" />
+
+    <com.qiyukf.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/ysf_message_item_portrait_right"
+        android:layout_width="@dimen/ysf_avatar_size"
+        android:layout_height="@dimen/ysf_avatar_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ysf_message_item_time"
+        android:layout_marginLeft="@dimen/ysf_bubble_head_margin_horizontal"
+        android:visibility="gone"
+        app:ysf_siv_border_color="@android:color/white"
+        app:ysf_siv_border_width="1dp" />
+
+    <LinearLayout
+        android:id="@+id/ysf_ll_message_item_body_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ysf_message_item_nickname"
+        android:layout_toLeftOf="@+id/ysf_message_item_portrait_right"
+        android:layout_toRightOf="@+id/ysf_message_item_portrait_left"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ysf_message_item_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_message_item_read_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:visibility="gone"/>
+                <ProgressBar
+                    android:id="@+id/ysf_message_item_progress"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:indeterminateDrawable="@drawable/ysf_progress_bar_grey"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ysf_message_item_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ysf_ic_failed"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ysf_message_item_trash_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ysf_ic_delete"
+                    android:visibility="gone" />
+
+                <com.qiyukf.nim.uikit.session.viewholder.MsgContainerLayout
+                    android:id="@+id/ysf_message_item_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/ysf_message_item_trash_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:maxWidth="270dp"
+            android:textColor="@color/ysf_red_f25058"
+            android:textSize="@dimen/ysf_text_size_13"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ysf_ll_message_item_body_parent"
+        android:layout_marginTop="5px"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ysf_ll_message_item_quick_container"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/ysf_ll_check_robot_answer_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ysf_ll_message_item_body_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="54dp"
+        android:visibility="gone">
+
+        <com.qiyukf.unicorn.widget.flowlayout.TagFlowLayout
+            android:id="@+id/ysf_fl_check_robot_answer_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ysf_ic_robot_check_parent_back" />
+
+        <Button
+            android:id="@+id/ysf_btn_robot_answer_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/ysf_btn_circle_text_color"
+            android:background="@drawable/ysf_btn_circle_back"
+            android:enabled="false"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/ysf_ok_check" />
+    </LinearLayout>
+
+
+</RelativeLayout>
