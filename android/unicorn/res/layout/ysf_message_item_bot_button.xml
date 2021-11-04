@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ysf_button_small_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ysf_evaluator_btn_first_bg"
+    android:gravity="center"
+    android:maxLines="1"
+    android:textColor="@color/ysf_white"
+    tools:text="1111"
+    android:textSize="@dimen/ysf_text_size_15" />

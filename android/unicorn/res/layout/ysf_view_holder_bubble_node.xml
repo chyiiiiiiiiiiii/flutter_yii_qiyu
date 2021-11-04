@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ysf_tv_holder_bubble_node_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/ysf_black_333333"
+        tools:text="当前订单无退款记录" />
+
+    <include
+        android:id="@+id/ysf_holder_bubble_node_title_line"
+        layout="@layout/ysf_include_divider" />
+
+    <TextView
+        android:id="@+id/ysf_tv_holder_bubble_node_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_margin="12dp"
+        android:textColor="@color/ysf_black_333333"
+        tools:text="标签名称：标签内容标签内容标签内容" />
+    <LinearLayout
+        android:id="@+id/ysf_ll_holder_bubble_node_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"/>
+    <include
+        android:id="@+id/ysf_holder_bubble_node_line"
+        layout="@layout/ysf_include_divider"/>
+
+    <TextView
+        android:id="@+id/ysf_tv_holder_bubble_node_more"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/ysf_blue_337EFF"
+        android:text="查看更多"/>
+</LinearLayout>

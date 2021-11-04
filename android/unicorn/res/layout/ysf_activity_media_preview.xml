@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ysf_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"/>
+
+    <FrameLayout
+        android:id="@+id/ysf_bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:elevation="4dp"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/ysf_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="start"
+            android:text="@string/ysf_button_back"
+            android:textColor="@color/ysf_white"
+            android:textSize="16sp"/>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:padding="16dp"
+                android:id="@+id/ysf_originalLayout"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.qiyukf.unicorn.mediaselect.internal.ui.widget.CheckRadioView
+                    android:id="@+id/ysf_original"
+                    android:src="@drawable/ysf_ic_preview_radio_off"
+                    android:layout_gravity="center_vertical"
+                    android:tint="#ffffff"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:enabled="true"
+                    android:paddingStart="4dp"
+                    android:paddingLeft="4dp"
+                    android:text="@string/ysf_button_original"
+                    android:textColor="@color/ysf_white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/ysf_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#61FFFFFF"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/ysf_button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="16dp"
+            android:textColor="@color/ysf_white"
+            android:textSize="16sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ysf_top_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:fitsSystemWindows="true">
+
+        <com.qiyukf.unicorn.mediaselect.internal.ui.widget.CheckView
+            android:id="@+id/ysf_check_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+    </FrameLayout>
+
+</RelativeLayout>

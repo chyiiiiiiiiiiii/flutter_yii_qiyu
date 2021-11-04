@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ysf_leave_msg_item_back"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/ysf_tv_leave_msg_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ysf_black_333333"
+        android:textSize="14sp"
+        android:paddingLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:maxWidth="160dp"
+        tools:text="2342342"/>
+
+    <ImageView
+        android:id="@+id/ysf_iv_leave_msg_info_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:scaleType="center"
+        android:src="@drawable/ysf_ic_arrow_right" />
+
+
+    <TextView
+        android:id="@+id/ysf_tv_leave_msg_info_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/ysf_iv_leave_msg_info_arrow"
+        android:layout_toRightOf="@+id/ysf_tv_leave_msg_info_label"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:textColor="@color/ysf_black_333333"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="ceshishuju"/>
+    <EditText
+        android:id="@+id/ysf_et_leave_msg_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="@null"
+        android:layout_toLeftOf="@+id/ysf_iv_leave_msg_info_arrow"
+        android:layout_centerVertical="true"
+        android:textColor="@color/ysf_black_333333"
+        android:textSize="14sp"
+        tools:text="好好啊好啊好好啊好啊好啊好好啊"/>
+
+
+
+</RelativeLayout>

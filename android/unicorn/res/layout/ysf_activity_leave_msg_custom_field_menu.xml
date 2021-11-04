@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000">
+
+    <LinearLayout
+        android:id="@+id/ysf_ll_btn_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ysf_white"
+        android:layout_below="@+id/ysf_ll_leave_msg_field_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/ysf_btn_leave_msg_field_ok"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ysf_btn_blue_bg_selector"
+            android:text="@string/ysf_ok"
+            android:textColor="@color/ysf_btn_common_text_color_selector"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ysf_ll_leave_msg_field_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/ysf_evaluation_dialog_header"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/ysf_tv_leave_msg_field_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="填写留言"
+                android:textColor="@color/ysf_black_333333"
+                android:textSize="@dimen/ysf_text_size_16sp" />
+
+            <ImageView
+                android:id="@+id/ysf_tv_leave_msg_field_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="4dp"
+                android:contentDescription="@null"
+                android:padding="12dp"
+                android:src="@drawable/ysf_ic_dialog_close" />
+        </FrameLayout>
+        <include layout="@layout/ysf_include_divider"/>
+        <ListView
+            android:id="@+id/ysf_lv_leave_msg_field_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:drawSelectorOnTop="true" />
+    </LinearLayout>
+</RelativeLayout>

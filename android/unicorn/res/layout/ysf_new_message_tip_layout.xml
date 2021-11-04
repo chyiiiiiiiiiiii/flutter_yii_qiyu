@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_message_tip_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/ysf_back_new_message_label"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:visibility="gone">
+    <TextView
+        android:id="@+id/new_message_tip_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/ysf_blue_5092e1"
+        tools:text="234234"
+        android:textSize="@dimen/ysf_text_size_12" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/ysf_message_unread_news_icon_selector"
+        android:contentDescription="@null" />
+
+
+</LinearLayout>

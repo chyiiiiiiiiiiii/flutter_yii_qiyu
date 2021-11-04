@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/qiyu.iml" filepath="$PROJECT_DIR$/.idea/modules/qiyu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unicorn/qiyu.unicorn.iml" filepath="$PROJECT_DIR$/.idea/modules/unicorn/qiyu.unicorn.iml" />
     </modules>
   </component>
 </project>

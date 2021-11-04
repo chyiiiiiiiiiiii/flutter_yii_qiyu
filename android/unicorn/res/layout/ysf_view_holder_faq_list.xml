@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ysf_message_faq_list_height"
+    android:background="@color/ysf_white">
+
+    <TextView
+        android:id="@+id/ysf_tv_faq_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textColor="@color/ysf_black"
+        android:textSize="@dimen/ysf_text_size_16" />
+
+    <include
+        layout="@layout/ysf_include_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ysf_divider_height"
+        android:layout_gravity="bottom" />
+</FrameLayout>

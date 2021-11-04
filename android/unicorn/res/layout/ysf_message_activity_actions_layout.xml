@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="gone">
+    <include layout="@layout/ysf_include_divider"/>
+
+    <com.qiyukf.unicorn.widget.ViewPagerFixed
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:id="@+id/actions_page_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="8.0dip"
+        android:gravity="center"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" />
+</LinearLayout>

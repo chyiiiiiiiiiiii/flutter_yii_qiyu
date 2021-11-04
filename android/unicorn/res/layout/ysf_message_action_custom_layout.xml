@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/ysf_tv_holder_drawer_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone|email"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="3dp"
+        android:padding="5dp"
+        android:maxWidth="@dimen/ysf_bubble_max_width"
+        android:layout_gravity="center"
+        android:textColor="@color/ysf_black_b3000000"
+        android:textSize="@dimen/ysf_text_size_16"
+        tools:text="2342342"/>
+</LinearLayout>

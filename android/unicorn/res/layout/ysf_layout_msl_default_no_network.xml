@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ysf_white">
+    <TextView
+        android:id="@+id/ysf_tv_msl_network_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:drawableTop="@drawable/ysf_ic_network_error"
+        android:drawablePadding="10dp"
+        android:text="当前网络不可用" />
+
+    <Button
+        android:id="@+id/ysf_btn_msl_no_network_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ysf_evaluation_button_bg"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/ysf_tv_msl_network_error"
+        android:text="刷新"
+        android:textColor="@color/ysf_white" />
+</RelativeLayout>

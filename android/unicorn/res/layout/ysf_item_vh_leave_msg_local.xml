@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/ysf_tv_item_vh_leave_msg_msg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/ysf_white"
+        tools:text="111:"/>
+    <TextView
+        android:id="@+id/ysf_tv_item_vh_leave_msg_msg_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp"
+        android:textSize="14sp"
+        android:textColor="@color/ysf_white"
+        tools:text="你好阿斯顿好"/>
+</LinearLayout>

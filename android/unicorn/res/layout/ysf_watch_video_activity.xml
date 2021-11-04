@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ysf_black"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlSur"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <SurfaceView
+            android:id="@+id/videoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/videoIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:contentDescription=""
+            android:src="@drawable/ysf_ic_video_start_back"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/ysf_watch_video_download_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:textColor="@color/ysf_white"
+                android:text="正在下载请稍后..."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutDownload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription=""
+                android:src="@drawable/ysf_video_play_icon_selector" />
+
+
+            <FrameLayout
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dip"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="27dip">
+
+                <ImageView
+                    android:id="@+id/downloadProgressBackground"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="27dip"
+                    android:background="@drawable/ysf_watch_video_download_progress_background"
+                    android:contentDescription="" />
+
+                <ImageView
+                    android:id="@+id/downloadProgressForeground"
+                    android:layout_width="111dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="27dip"
+                    android:background="@drawable/ysf_watch_video_download_progress_foreground"
+                    android:contentDescription="" />
+
+                <ImageView
+                    android:id="@+id/control_download_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ysf_icon_download_pause" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/downloadProgressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblVideoFileInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/videoView"
+            android:layout_below="@id/videoView"
+            android:layout_marginTop="10dip"
+            android:visibility="gone"
+            android:textColor="@color/ysf_grey_999999"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/lblVideoTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/videoView"
+            android:layout_alignTop="@id/lblVideoFileInfo"
+            android:gravity="right"
+            android:visibility="gone"
+            android:textColor="@color/ysf_grey_999999"
+            android:textSize="12dip" />
+    </RelativeLayout>
+    <include layout="@layout/ysf_include_video_progress_layout" />
+
+    <ImageView
+        android:id="@+id/ysf_iv_watch_video_finish"
+        android:layout_width="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ysf_ic_watch_video_finish_back" />
+
+</FrameLayout>

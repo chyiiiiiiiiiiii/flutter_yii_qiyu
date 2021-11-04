@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.qiyukf.nim.uikit.common.ui.imageview.MsgThumbImageView
+        android:id="@+id/message_item_thumb_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|top"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/message_item_thumb_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/message_item_thumb_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="99%"
+        android:visibility="gone"
+        android:textColor="@color/ysf_grey_c5c4c4" />
+    <TextView
+        android:id="@+id/tv_nim_message_item_thumb_button"
+        android:layout_width="wrap_content"
+        android:layout_height="76px"
+        android:textSize="@dimen/ysf_text_size_14"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/ysf_blue_5092e1"
+        tools:text="123123"/>
+</FrameLayout>

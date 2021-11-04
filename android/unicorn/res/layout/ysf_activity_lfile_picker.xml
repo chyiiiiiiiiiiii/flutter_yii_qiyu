@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ysf_white">
+
+    <LinearLayout
+        android:id="@+id/ysf_file_pick_layout_path"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#dddddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ysf_file_pick_tv_path"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ysf_tv_file_pick_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ysf_file_back_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ysf_file_up"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/ysf_file_UpOneLevel" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ysf_btn_addbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ysf_file_btn_bg"
+        android:text="@string/ysf_file_Selected"
+        android:textColor="@color/ysf_white"
+        android:textSize="18sp" />
+
+    <com.qiyukf.unicorn.fileselect.ui.widget.EmptyListView
+        android:id="@+id/ysf_lv_pick_file_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ysf_btn_addbook"
+        android:layout_below="@id/ysf_file_pick_layout_path" />
+
+    <include
+        android:id="@+id/empty_view"
+        layout="@layout/ysf_file_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ysf_file_pick_layout_path" />
+
+</RelativeLayout>

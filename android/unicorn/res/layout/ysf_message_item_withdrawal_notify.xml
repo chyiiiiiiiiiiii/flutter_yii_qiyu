@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ysf_tv_msg_item_withdrawal_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone|email"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="3dp"
+        android:maxWidth="@dimen/ysf_bubble_max_width"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:textSize="@dimen/ysf_text_size_12"
+        android:textColor="@color/ysf_grey_b1b1b1"
+        android:layout_gravity="center"
+        tools:text="11111"
+        android:gravity="center"/>
+</LinearLayout>

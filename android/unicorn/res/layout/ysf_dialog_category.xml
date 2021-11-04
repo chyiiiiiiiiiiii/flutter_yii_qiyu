@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ysf_white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/ysf_dialog_category_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ysf_dialog_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/ysf_black_222222"
+            android:textSize="@dimen/ysf_text_size_16"
+            tools:text="请选择咨询内容" />
+
+        <ImageView
+            android:id="@+id/ysf_dialog_category_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/ysf_ic_dialog_close" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ysf_divider_height"
+            android:layout_gravity="bottom"
+            android:background="@color/ysf_grey_e6e6e6" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ysf_dialog_category_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

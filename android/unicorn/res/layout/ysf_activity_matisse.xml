@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ysf_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ysf_tips_background_fff9e2"
+        android:elevation="4dp"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/ysf_selected_album"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableRight="@drawable/ysf_ic_arrow_drop_down_white_24dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/message_tips_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:textColor="@color/ysf_tips_text_c08722"
+            android:textSize="@dimen/ysf_text_size_14"
+            android:text="@string/ysf_file_limit_str"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ysf_bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/ysf_button_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="16dp"
+            android:text="@string/ysf_button_preview"
+            android:textColor="#0077D9"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:padding="16dp"
+            android:id="@+id/ysf_originalLayout"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:showIn="@layout/ysf_activity_matisse">
+
+
+            <com.qiyukf.unicorn.mediaselect.internal.ui.widget.CheckRadioView
+                android:id="@+id/ysf_original"
+                android:src="@drawable/ysf_ic_preview_radio_off"
+                android:layout_gravity="center_vertical"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:enabled="true"
+                android:paddingStart="4dp"
+                android:paddingLeft="4dp"
+                android:text="@string/ysf_button_original"
+                android:textColor="#DEFFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/ysf_button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="16dp"
+            android:textColor="#03A9F4"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ysf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ysf_bottom_toolbar"
+        android:layout_below="@id/ysf_toolbar"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/ysf_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ysf_bottom_toolbar"
+        android:layout_below="@id/ysf_toolbar"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ysf_empty_view_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ysf_ic_empty"
+            android:gravity="center"
+            android:text="@string/ysf_empty_text"
+            android:textColor="#4D000000"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+</RelativeLayout>

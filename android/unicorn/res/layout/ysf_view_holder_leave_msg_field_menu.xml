@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/ysf_white">
+
+    <TextView
+        android:id="@+id/tv_leave_msg_field_item_name"
+        style="@style/ysf_leave_msg_field_list_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="58dp"
+        tools:text="11111"/>
+
+    <ImageView
+        android:id="@+id/ysf_lv_leave_msg_field_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginRight="22dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_menu_selected"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/v_transfer_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ysf_divider_height"
+        android:layout_gravity="bottom"
+        android:background="@color/ysf_notification_bg" />
+</FrameLayout>
