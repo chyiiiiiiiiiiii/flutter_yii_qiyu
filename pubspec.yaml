@@ -1,7 +1,7 @@
 name: qiyu
 description: Qiyu Flutter Package
 version: 0.0.1
-homepage:
+homepage: https://github.com/chyiiiiiiiiiiii/flutter_qiyu
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
