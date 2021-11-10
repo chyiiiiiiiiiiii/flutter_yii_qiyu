@@ -2,6 +2,10 @@
 
 ![](qiyu.png)
 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/chyiiiiiiiiiiii/flutter_qiyu)
+![GitHub](https://img.shields.io/github/license/chyiiiiiiiiiiii/flutter_qiyu?color=orange&style=flat-square)
+
+
 Flutter目前官方沒有支援，所以自行實作原生SDK，製作 Flutter Package
 
 -------------------
