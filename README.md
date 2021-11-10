@@ -126,8 +126,9 @@ Qiyu.showCustomerService();
 --------------
 
 ## 問題
-- SDK修復包，5.7.9，整合至Flutter App專案時，遇到Flutter找不到Android Module的問題。解決方法請查看下方：
-[![Flutter｜Package｜專案設置與載入套件裡用到的Android Module](medium.png)](https://ab20803.medium.com/flutter-package-%E5%B0%88%E6%A1%88%E8%A8%AD%E7%BD%AE%E8%88%87%E8%BC%89%E5%85%A5%E5%A5%97%E4%BB%B6%E8%A3%A1%E7%94%A8%E5%88%B0%E7%9A%84android-module-273d933fb89c)
+- SDK修復包，5.7.9，整合至Flutter App專案時，遇到Flutter找不到Android Module的問題。
+解決方法請查看下方↓
+![(android_module_issue.png)](https://ab20803.medium.com/flutter-package-%E5%B0%88%E6%A1%88%E8%A8%AD%E7%BD%AE%E8%88%87%E8%BC%89%E5%85%A5%E5%A5%97%E4%BB%B6%E8%A3%A1%E7%94%A8%E5%88%B0%E7%9A%84android-module-273d933fb89c)
 
 ## 連結
 - [網易七魚](https://qiyukf.com/)
