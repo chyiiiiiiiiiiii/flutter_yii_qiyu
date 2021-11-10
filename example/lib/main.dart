@@ -45,9 +45,9 @@ class _MyAppState extends State<MyApp> {
     if (isLogoutSuccess) {
       // 設置用戶資訊
       List<QiyuUserInfoData> list = [];
-      list.add(QiyuUserInfoData(key: 'real_name', value: 'Test(555)', label: '名字'));
-      list.add(QiyuUserInfoData(key: 'mobile_phone', value: '0939552555', label: '電話'));
-      list.add(QiyuUserInfoData(key: 'email', value: '555@gmail.com', label: '信箱'));
+      list.add(QiyuUserInfoData(key: QiyuUserInfoData.keyName, value: 'Test(555)', label: '名字'));
+      list.add(QiyuUserInfoData(key: QiyuUserInfoData.keyPhone, value: '0939552555', label: '電話'));
+      list.add(QiyuUserInfoData(key: QiyuUserInfoData.keyEmail, value: '555@gmail.com', label: '信箱'));
       list.add(QiyuUserInfoData(key: 'city', value: 'Taipei', label: '城市', index: 0));
       await Qiyu.setUserInfo(userId: 'yii555', userInfoDataList: list);
     }
