@@ -2,7 +2,7 @@
 
 ![](images/qiyu.png)
 
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/chyiiiiiiiiiiii/flutter_qiyu)
+![Pub Version](https://img.shields.io/pub/v/flutter_yii_qiyu)
 ![GitHub](https://img.shields.io/github/license/chyiiiiiiiiiiii/flutter_qiyu?color=orange&style=flat-square)
 
 
