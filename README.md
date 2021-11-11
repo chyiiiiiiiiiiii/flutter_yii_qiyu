@@ -2,8 +2,7 @@
 
 ![](images/qiyu.png)
 
-<img src="https://img.shields.io/pub/v/flutter_yii_qiyu" href='https://pub.dev/packages/flutter_yii_qiyu'>
-
+![GitHub](https://img.shields.io/pub/v/flutter_yii_qiyu)
 ![GitHub](https://img.shields.io/github/license/chyiiiiiiiiiiii/flutter_qiyu?color=orange&style=flat-square)
 
 
